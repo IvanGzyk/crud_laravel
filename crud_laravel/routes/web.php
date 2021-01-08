@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 Route::get('/produtos/novo', 'App\Http\Controllers\ProdutosController@create');
 Route::post('/produtos/novo', 'App\Http\Controllers\ProdutosController@store')->name('registrar_produto');
+Route::post('/produtos/novo', 'App\Http\Controllers\ProdutosController@show');
+Route::post('/produtos/novo', 'App\Http\Controllers\ProdutosController@edit');
